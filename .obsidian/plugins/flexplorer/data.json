@@ -5,9 +5,9 @@
       "isHidden": false,
       "sortOrder": "custom",
       "customOrder": [
-        ".claude",
         ".gitignore",
         ".git",
+        ".claude",
         "0. Templates",
         "1. People",
         "2. Projects",
@@ -224,20 +224,28 @@
       "isPinned": false,
       "isHidden": false
     },
+    ".claude": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "skills"
+      ],
+      "sortOrder": "custom"
+    },
     ".git": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "logs",
-        "refs",
-        "objects",
-        "description",
-        "info",
         "index",
-        "hooks",
+        "objects",
+        "COMMIT_EDITMSG",
         "config",
+        "refs",
+        "logs",
         "HEAD",
-        "COMMIT_EDITMSG"
+        "info",
+        "hooks",
+        "description"
       ],
       "sortOrder": "custom"
     },
@@ -245,15 +253,16 @@
       "isPinned": false,
       "isHidden": false
     },
-    ".git/COMMIT_EDITMSG": {
+    ".claude/skills": {
       "isPinned": false,
-      "isHidden": false
+      "isHidden": false,
+      "customOrder": [
+        "meeting-from-granola",
+        "vault-groom"
+      ],
+      "sortOrder": "custom"
     },
-    ".git/HEAD": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/config": {
+    ".git/description": {
       "isPinned": false,
       "isHidden": false
     },
@@ -261,25 +270,21 @@
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "prepare-commit-msg.sample",
         "update.sample",
-        "pre-rebase.sample",
         "push-to-checkout.sample",
-        "pre-receive.sample",
         "pre-push.sample",
+        "prepare-commit-msg.sample",
         "pre-commit.sample",
-        "commit-msg.sample",
+        "pre-receive.sample",
+        "pre-rebase.sample",
         "pre-merge-commit.sample",
+        "fsmonitor-watchman.sample",
         "pre-applypatch.sample",
-        "post-update.sample",
+        "commit-msg.sample",
         "applypatch-msg.sample",
-        "fsmonitor-watchman.sample"
+        "post-update.sample"
       ],
       "sortOrder": "custom"
-    },
-    ".git/index": {
-      "isPinned": false,
-      "isHidden": false
     },
     ".git/info": {
       "isPinned": false,
@@ -289,78 +294,16 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/description": {
+    ".git/HEAD": {
       "isPinned": false,
       "isHidden": false
     },
-    ".git/objects": {
+    ".git/logs": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "e2",
-        "f9",
-        "c8",
-        "d7",
-        "d3",
-        "3e",
-        "c5",
-        "bc",
-        "e8",
-        "ac",
-        "1f",
-        "2f",
-        "c9",
-        "b1",
-        "cb",
-        "c7",
-        "f0",
-        "d1",
-        "96",
-        "89",
-        "f5",
-        "4e",
-        "9e",
-        "63",
-        "74",
-        "95",
-        "info",
-        "pack",
-        "f8",
-        "ea",
-        "e3",
-        "f2",
-        "e1",
-        "e0",
-        "c0",
-        "d8",
-        "dd",
-        "b9",
-        "a8",
-        "82",
-        "90",
-        "78",
-        "76",
-        "77",
-        "75",
-        "66",
-        "65",
-        "61",
-        "5f",
-        "62",
-        "58",
-        "3c",
-        "39",
-        "35",
-        "2e",
-        "2d",
-        "33",
-        "28",
-        "26",
-        "10",
-        "12",
-        "0e",
-        "04",
-        "0b"
+        "refs",
+        "HEAD"
       ],
       "sortOrder": "custom"
     },
@@ -374,16 +317,105 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/logs": {
+    ".git/config": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/COMMIT_EDITMSG": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "refs",
-        "HEAD"
+        "d8",
+        "f8",
+        "74",
+        "f9",
+        "fc",
+        "pack",
+        "d7",
+        "e2",
+        "info",
+        "c8",
+        "e0",
+        "f5",
+        "f2",
+        "f0",
+        "dd",
+        "ea",
+        "e8",
+        "e3",
+        "e1",
+        "d3",
+        "c9",
+        "95",
+        "c5",
+        "bc",
+        "d1",
+        "cb",
+        "c7",
+        "c0",
+        "b9",
+        "b1",
+        "a7",
+        "9e",
+        "ac",
+        "a8",
+        "58",
+        "89",
+        "90",
+        "96",
+        "63",
+        "82",
+        "77",
+        "81",
+        "78",
+        "76",
+        "6d",
+        "2f",
+        "4e",
+        "75",
+        "66",
+        "5f",
+        "61",
+        "65",
+        "62",
+        "3e",
+        "1f",
+        "12",
+        "3c",
+        "2d",
+        "39",
+        "35",
+        "2c",
+        "33",
+        "2e",
+        "11",
+        "0e",
+        "19",
+        "26",
+        "28",
+        "04",
+        "0b",
+        "10"
       ],
       "sortOrder": "custom"
     },
-    ".git/hooks/fsmonitor-watchman.sample": {
+    ".git/index": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".claude/skills/vault-groom": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "SKILL.md"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/hooks/post-update.sample": {
       "isPinned": false,
       "isHidden": false
     },
@@ -391,7 +423,15 @@
       "isPinned": false,
       "isHidden": false
     },
-    ".git/hooks/post-update.sample": {
+    ".claude/skills/meeting-from-granola": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "SKILL.md"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/hooks/commit-msg.sample": {
       "isPinned": false,
       "isHidden": false
     },
@@ -399,19 +439,15 @@
       "isPinned": false,
       "isHidden": false
     },
+    ".git/hooks/fsmonitor-watchman.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
     ".git/hooks/pre-merge-commit.sample": {
       "isPinned": false,
       "isHidden": false
     },
-    ".git/hooks/commit-msg.sample": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/hooks/pre-commit.sample": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/hooks/pre-push.sample": {
+    ".git/hooks/pre-rebase.sample": {
       "isPinned": false,
       "isHidden": false
     },
@@ -419,11 +455,19 @@
       "isPinned": false,
       "isHidden": false
     },
-    ".git/hooks/push-to-checkout.sample": {
+    ".git/hooks/pre-commit.sample": {
       "isPinned": false,
       "isHidden": false
     },
-    ".git/hooks/pre-rebase.sample": {
+    ".git/hooks/prepare-commit-msg.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/pre-push.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/push-to-checkout.sample": {
       "isPinned": false,
       "isHidden": false
     },
@@ -435,15 +479,48 @@
       "isPinned": false,
       "isHidden": false
     },
-    ".git/hooks/prepare-commit-msg.sample": {
+    ".git/logs/HEAD": {
       "isPinned": false,
       "isHidden": false
+    },
+    ".git/refs/heads": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "main"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/refs/tags": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [],
+      "sortOrder": "custom"
+    },
+    ".git/objects/10": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "a222d92fd42cf9ca9c6e12afd2ebe6098e784e",
+        "c04a01c77f9a33b3b144a349d2bfc2d7453201"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/logs/refs": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "remotes",
+        "heads"
+      ],
+      "sortOrder": "custom"
     },
     ".git/objects/0b": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "98be45f9063b9f8548a5ef32a44c0548a11424"
+        "98be45f9063b9f8548a5ef32a44c0548a11424",
+        "344eaf982ec50807037bb5c64592dab3c911b3"
       ],
       "sortOrder": "custom"
     },
@@ -451,43 +528,8 @@
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "b96e92308987c21348e7e59b74735fb95695d1",
-        "7466586754675b45c563164487502ec3b6b885"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/0e": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "68e712e6c6fffc74b9dbfeee884ceab631814a",
-        "9e32f89d67c270cfd3472560c2331736b395d6"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/12": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "d7c52c3865361103cc0c414ef1c9b5662f88fd"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/10": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "c04a01c77f9a33b3b144a349d2bfc2d7453201",
-        "a222d92fd42cf9ca9c6e12afd2ebe6098e784e"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/26": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "9bd835f7498c07c86ab69035d7e4a12c889c73",
-        "96820e43d5cf11b19e9600a6519f6ddd8fe031"
+        "7466586754675b45c563164487502ec3b6b885",
+        "b96e92308987c21348e7e59b74735fb95695d1"
       ],
       "sortOrder": "custom"
     },
@@ -496,6 +538,56 @@
       "isHidden": false,
       "customOrder": [
         "97ce2d4eebd14540f546a76157d16881d9f8b0"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/26": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "96820e43d5cf11b19e9600a6519f6ddd8fe031",
+        "9bd835f7498c07c86ab69035d7e4a12c889c73"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/19": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "bc4ecbec710e89a0a63bb3745df05abab9fa8b"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/refs/remotes": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "origin"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/0e": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "9e32f89d67c270cfd3472560c2331736b395d6",
+        "68e712e6c6fffc74b9dbfeee884ceab631814a"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/11": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "5e5f8a162d15d7365cf572d20e86c0fabb36b3"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/2e": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "2b3e1be09e77ee057ec1632f68ca06a7e1d945"
       ],
       "sortOrder": "custom"
     },
@@ -508,19 +600,11 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/2d": {
+    ".git/objects/2c": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "97494ebd2898643a0a47afe49fb2d282c62274"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/2e": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "2b3e1be09e77ee057ec1632f68ca06a7e1d945"
+        "1673856dded94cba02dad5c00034f5652be7aa"
       ],
       "sortOrder": "custom"
     },
@@ -540,6 +624,14 @@
       ],
       "sortOrder": "custom"
     },
+    ".git/objects/2d": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "97494ebd2898643a0a47afe49fb2d282c62274"
+      ],
+      "sortOrder": "custom"
+    },
     ".git/objects/3c": {
       "isPinned": false,
       "isHidden": false,
@@ -548,11 +640,27 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/58": {
+    ".git/objects/12": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "b369bc139c626d62a1a60633aaab987c887492"
+        "d7c52c3865361103cc0c414ef1c9b5662f88fd"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/1f": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "8d291217211c3824b6e78f45cf7a9b8c1e2570"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/3e": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "a5b4cd3d018c1b8f040414bdd2b7366d7215b6"
       ],
       "sortOrder": "custom"
     },
@@ -564,11 +672,11 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/5f": {
+    ".git/objects/65": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "b61ec56f032f76e297312e0ed03c8e6537dadb"
+        "e7ed9d3530d0a2c4a0c0a06ee66f72f6cc96ef"
       ],
       "sortOrder": "custom"
     },
@@ -580,11 +688,11 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/65": {
+    ".git/objects/5f": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "e7ed9d3530d0a2c4a0c0a06ee66f72f6cc96ef"
+        "b61ec56f032f76e297312e0ed03c8e6537dadb"
       ],
       "sortOrder": "custom"
     },
@@ -604,11 +712,27 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/77": {
+    ".git/objects/4e": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "46f942c13ebe0ef0869d05c67fd9ad52ddb026"
+        "f7d3f95bc315d4979893c550255a5941c47131"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/2f": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "7b7e39d8a9e5626a4aa6099b5a2534157620c1"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/6d": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "eb62877c945bc4f17d2e50bbdaa8ff234e541b"
       ],
       "sortOrder": "custom"
     },
@@ -624,16 +748,24 @@
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "be44709c9413900cdfd575035aa34a70c14723",
-        "cbc1dd6bd61c79dd0ce7bc2c02d59228ae465f"
+        "cbc1dd6bd61c79dd0ce7bc2c02d59228ae465f",
+        "be44709c9413900cdfd575035aa34a70c14723"
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/90": {
+    ".git/objects/81": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "c9803cedbc5c1f986992b13f3b27f13734d3be"
+        "ca4b1027af6bdead6cc3660012133d4d216296"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/77": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "46f942c13ebe0ef0869d05c67fd9ad52ddb026"
       ],
       "sortOrder": "custom"
     },
@@ -645,6 +777,47 @@
       ],
       "sortOrder": "custom"
     },
+    ".git/objects/63": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "dba3bf60375b771d87885c6706daecf8a46697",
+        "9b90da7172bebbc1a65e30ed0a1c611b5b26dc"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/96": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "74cb6f1b1c8862f4fbe7dfffa818b90ce3c6ae"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/90": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "c9803cedbc5c1f986992b13f3b27f13734d3be"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/89": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "ddc302460923b279602e68f78b58a118b978cf"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/58": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "b369bc139c626d62a1a60633aaab987c887492"
+      ],
+      "sortOrder": "custom"
+    },
     ".git/objects/a8": {
       "isPinned": false,
       "isHidden": false,
@@ -653,11 +826,151 @@
       ],
       "sortOrder": "custom"
     },
+    ".git/objects/ac": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "625f64f90a8d1662947823a3fd1ae487fc6e8a"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/9e": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "26dfeeb6e641a33dae4961196235bdb965b21b",
+        "12989055e9b0c1e4e2aef38c6c4382c0c18062"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/a7": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "e1da70ab058e8a401192f3cd7b794863ac514f"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/b1": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "c4ee8c737e0ba89a311812ae1a6192069ee72e"
+      ],
+      "sortOrder": "custom"
+    },
     ".git/objects/b9": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
         "9149e007224c0805a73322dde9b7d4d3ac8d70"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/c0": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "0e1c420ecafed3b7b557f308fa6c06f19d785f"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/c7": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "c2f63c1afd2e00f0f1a97f1ecaadfe9b9d471f"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/cb": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "d2e15357ae13d5c7473b1133f8950d02156802"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/d1": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "7079fe42e8702e8edb17234018dd292b123dd7"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/bc": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "43c946b6aff5ff09d5681e4464ff1ae33557e2",
+        "61a9f05fed715225dd682e6444924f5bdaf5a5"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/c5": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "8b77a5116d00eb31bafece575b6ddb64583d71"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/95": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "1f511ee3346ceb4a0f79cbce6ae30d89950edd"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/c9": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "04525033651ab79ed06f001b96403a9fe78dd5"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/d3": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "6a0794cff993f3e1ee8c4a8cc76522baed3ed0"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/e1": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "a58713e8c8c0f34931e8447538da1b6629d625",
+        "71aaa0e55b20793a418e6f1e7c1c974297d0c7",
+        "51fd3e772a56444a1eb7d95a45f0ea7c203bba"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/e3": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "e633b9c082b3474ab2ee2066adc6179da02caa"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/e8": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "100f5d4ec1889f276035b7359b300252fbd239"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/ea": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "1f1a1860e241d045395cd55ff63583fbc97287"
       ],
       "sortOrder": "custom"
     },
@@ -670,36 +983,11 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/d8": {
+    ".git/objects/f0": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "c091d6174085e6221ec25123dcaf6ad9a7e60c"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/c0": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "0e1c420ecafed3b7b557f308fa6c06f19d785f"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/e0": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "8c2c011883e38b5038be5426a2eb3054e24290"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/e1": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "51fd3e772a56444a1eb7d95a45f0ea7c203bba",
-        "a58713e8c8c0f34931e8447538da1b6629d625"
+        "44d4f8db3a67e35a6f14b9d46f13a32c5a604f"
       ],
       "sortOrder": "custom"
     },
@@ -711,34 +999,80 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/e3": {
+    ".git/objects/f5": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "e633b9c082b3474ab2ee2066adc6179da02caa"
+        "c3fb2207fdd62dc9a9cda9805674f930697358"
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/ea": {
+    ".git/objects/e0": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "1f1a1860e241d045395cd55ff63583fbc97287"
+        "8c2c011883e38b5038be5426a2eb3054e24290"
       ],
       "sortOrder": "custom"
     },
-    ".git/refs/heads": {
+    ".git/objects/c8": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "main"
+        "372f9877e67322508dc2b78ae04ab6f102db95"
       ],
       "sortOrder": "custom"
     },
-    ".git/refs/tags": {
+    ".git/objects/info": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [],
+      "sortOrder": "custom"
+    },
+    ".git/objects/e2": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "1a18dc273108270255e8199871dcb9ca35db88"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/d7": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "6e6c9c7f972448d70a28e2941c80ecff424a3e"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/pack": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [],
+      "sortOrder": "custom"
+    },
+    ".git/objects/fc": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "6d88f20a614ce8e0ac8b4de67bb6ad7c2de1f7"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/f9": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "c0efff9f8044258b155121b1855b9c03995176"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/74": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "239014bb36b2e7909bd9d27669a9ca7410ba7e"
+      ],
       "sortOrder": "custom"
     },
     ".git/objects/f8": {
@@ -749,184 +1083,19 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/pack": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/info": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/logs/HEAD": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/logs/refs": {
+    ".git/objects/d8": {
       "isPinned": false,
       "isHidden": false,
       "customOrder": [
-        "remotes",
-        "heads"
+        "c091d6174085e6221ec25123dcaf6ad9a7e60c"
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/04/7466586754675b45c563164487502ec3b6b885": {
+    ".claude/skills/meeting-from-granola/SKILL.md": {
       "isPinned": false,
       "isHidden": false
     },
-    ".git/objects/0b/98be45f9063b9f8548a5ef32a44c0548a11424": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/12/d7c52c3865361103cc0c414ef1c9b5662f88fd": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/04/b96e92308987c21348e7e59b74735fb95695d1": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/0e/9e32f89d67c270cfd3472560c2331736b395d6": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/10/a222d92fd42cf9ca9c6e12afd2ebe6098e784e": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/10/c04a01c77f9a33b3b144a349d2bfc2d7453201": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/28/97ce2d4eebd14540f546a76157d16881d9f8b0": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/26/96820e43d5cf11b19e9600a6519f6ddd8fe031": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/33/0697f9b6a20e39a44c7cdef7cdc24cf1410c50": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/33/5d8b78dd531a4d07b920e3c2ae1820a0d11833": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/2d/97494ebd2898643a0a47afe49fb2d282c62274": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/2e/2b3e1be09e77ee057ec1632f68ca06a7e1d945": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/39/70d4e65ff2b2e36da82f8dfde5fc08c28febb9": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/26/9bd835f7498c07c86ab69035d7e4a12c889c73": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/58/b369bc139c626d62a1a60633aaab987c887492": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/3c/f0fdb75c49445d4d4a1f74fad238ca1c9e898f": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/62/3d2066bc6a1c910830a97bcd0856445785ef7e": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/5f/b61ec56f032f76e297312e0ed03c8e6537dadb": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/65/e7ed9d3530d0a2c4a0c0a06ee66f72f6cc96ef": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/61/a94209f5d8ebac73bec45e3130ee57ea052d6a": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/66/fc2d431caa6cfed5af62c643d074303eed0dd8": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/35/9d91257de26b93eb4eccbf407db08fea8f6fd4": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/75/6ae20606d23ae36b5d911d07784d3fe78dfca2": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/77/46f942c13ebe0ef0869d05c67fd9ad52ddb026": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/76/9f77552bd4fb8e718d4b00881c4de424792ce7": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/90/c9803cedbc5c1f986992b13f3b27f13734d3be": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/82/091fbafb6e10de2168f6f63561c4856e4e23eb": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/a8/bf70b58df605ee5ca3eda8768c53fe4b716c14": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/b9/9149e007224c0805a73322dde9b7d4d3ac8d70": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/78/cbc1dd6bd61c79dd0ce7bc2c02d59228ae465f": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/d8/c091d6174085e6221ec25123dcaf6ad9a7e60c": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/c0/0e1c420ecafed3b7b557f308fa6c06f19d785f": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/dd/bfdd14e22c776a33d6951f6058dfc7a8c191cf": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/e0/8c2c011883e38b5038be5426a2eb3054e24290": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/f2/09dd4a999e8f0194190d89ef7f0ea872002b49": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/e1/a58713e8c8c0f34931e8447538da1b6629d625": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/e1/51fd3e772a56444a1eb7d95a45f0ea7c203bba": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/e3/e633b9c082b3474ab2ee2066adc6179da02caa": {
+    ".claude/skills/vault-groom/SKILL.md": {
       "isPinned": false,
       "isHidden": false
     },
@@ -934,7 +1103,23 @@
       "isPinned": false,
       "isHidden": false
     },
-    ".git/objects/f8/618cf493dcfaceacfc3984eead9e5d2cdba19c": {
+    ".git/objects/10/c04a01c77f9a33b3b144a349d2bfc2d7453201": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/0b/344eaf982ec50807037bb5c64592dab3c911b3": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/10/a222d92fd42cf9ca9c6e12afd2ebe6098e784e": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/28/97ce2d4eebd14540f546a76157d16881d9f8b0": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/04/b96e92308987c21348e7e59b74735fb95695d1": {
       "isPinned": false,
       "isHidden": false
     },
@@ -946,173 +1131,9 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/objects/ea/1f1a1860e241d045395cd55ff63583fbc97287": {
+    ".git/objects/26/9bd835f7498c07c86ab69035d7e4a12c889c73": {
       "isPinned": false,
       "isHidden": false
-    },
-    ".git/logs/refs/heads/main": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/95": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/78/be44709c9413900cdfd575035aa34a70c14723": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/74": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/63": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "dba3bf60375b771d87885c6706daecf8a46697"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/9e": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/4e": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/f5": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/dd/e00d9d45e3069348782cf09e07a71d4224048a": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/89": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/96": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/d1": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/f0": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/0e/68e712e6c6fffc74b9dbfeee884ceab631814a": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/c7": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/cb": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "d2e15357ae13d5c7473b1133f8950d02156802"
-      ],
-      "sortOrder": "custom"
-    },
-    ".git/objects/cb/d2e15357ae13d5c7473b1133f8950d02156802": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/b1": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/c9": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/2f": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/1f": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/ac": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/e8": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/bc": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/c5": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/3e": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/d3": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/refs/remotes": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "origin"
-      ],
-      "sortOrder": "custom"
     },
     ".git/refs/remotes/origin": {
       "isPinned": false,
@@ -1122,7 +1143,295 @@
       ],
       "sortOrder": "custom"
     },
-    ".git/refs/remotes/origin/main": {
+    ".git/objects/19/bc4ecbec710e89a0a63bb3745df05abab9fa8b": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/0e/68e712e6c6fffc74b9dbfeee884ceab631814a": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/0e/9e32f89d67c270cfd3472560c2331736b395d6": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/11/5e5f8a162d15d7365cf572d20e86c0fabb36b3": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/2e/2b3e1be09e77ee057ec1632f68ca06a7e1d945": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/33/0697f9b6a20e39a44c7cdef7cdc24cf1410c50": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/26/96820e43d5cf11b19e9600a6519f6ddd8fe031": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/04/7466586754675b45c563164487502ec3b6b885": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/0b/98be45f9063b9f8548a5ef32a44c0548a11424": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/33/5d8b78dd531a4d07b920e3c2ae1820a0d11833": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/2d/97494ebd2898643a0a47afe49fb2d282c62274": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/39/70d4e65ff2b2e36da82f8dfde5fc08c28febb9": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/12/d7c52c3865361103cc0c414ef1c9b5662f88fd": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/1f/8d291217211c3824b6e78f45cf7a9b8c1e2570": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/3c/f0fdb75c49445d4d4a1f74fad238ca1c9e898f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/62/3d2066bc6a1c910830a97bcd0856445785ef7e": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/3e/a5b4cd3d018c1b8f040414bdd2b7366d7215b6": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/2c/1673856dded94cba02dad5c00034f5652be7aa": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/61/a94209f5d8ebac73bec45e3130ee57ea052d6a": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/65/e7ed9d3530d0a2c4a0c0a06ee66f72f6cc96ef": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/66/fc2d431caa6cfed5af62c643d074303eed0dd8": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/5f/b61ec56f032f76e297312e0ed03c8e6537dadb": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/75/6ae20606d23ae36b5d911d07784d3fe78dfca2": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/4e/f7d3f95bc315d4979893c550255a5941c47131": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/76/9f77552bd4fb8e718d4b00881c4de424792ce7": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/2f/7b7e39d8a9e5626a4aa6099b5a2534157620c1": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/35/9d91257de26b93eb4eccbf407db08fea8f6fd4": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/78/be44709c9413900cdfd575035aa34a70c14723": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/78/cbc1dd6bd61c79dd0ce7bc2c02d59228ae465f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/82/091fbafb6e10de2168f6f63561c4856e4e23eb": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/63/9b90da7172bebbc1a65e30ed0a1c611b5b26dc": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/63/dba3bf60375b771d87885c6706daecf8a46697": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/77/46f942c13ebe0ef0869d05c67fd9ad52ddb026": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/96/74cb6f1b1c8862f4fbe7dfffa818b90ce3c6ae": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/89/ddc302460923b279602e68f78b58a118b978cf": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/58/b369bc139c626d62a1a60633aaab987c887492": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/a8/bf70b58df605ee5ca3eda8768c53fe4b716c14": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/ac/625f64f90a8d1662947823a3fd1ae487fc6e8a": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/90/c9803cedbc5c1f986992b13f3b27f13734d3be": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/9e/12989055e9b0c1e4e2aef38c6c4382c0c18062": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/9e/26dfeeb6e641a33dae4961196235bdb965b21b": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/a7/e1da70ab058e8a401192f3cd7b794863ac514f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/b9/9149e007224c0805a73322dde9b7d4d3ac8d70": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/b1/c4ee8c737e0ba89a311812ae1a6192069ee72e": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/c0/0e1c420ecafed3b7b557f308fa6c06f19d785f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/c7/c2f63c1afd2e00f0f1a97f1ecaadfe9b9d471f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/cb/d2e15357ae13d5c7473b1133f8950d02156802": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/81/ca4b1027af6bdead6cc3660012133d4d216296": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/d1/7079fe42e8702e8edb17234018dd292b123dd7": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/6d/eb62877c945bc4f17d2e50bbdaa8ff234e541b": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/bc/61a9f05fed715225dd682e6444924f5bdaf5a5": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/c5/8b77a5116d00eb31bafece575b6ddb64583d71": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/95/1f511ee3346ceb4a0f79cbce6ae30d89950edd": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/bc/43c946b6aff5ff09d5681e4464ff1ae33557e2": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e1/51fd3e772a56444a1eb7d95a45f0ea7c203bba": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/c9/04525033651ab79ed06f001b96403a9fe78dd5": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e1/71aaa0e55b20793a418e6f1e7c1c974297d0c7": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/ea/1f1a1860e241d045395cd55ff63583fbc97287": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e8/100f5d4ec1889f276035b7359b300252fbd239": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/d3/6a0794cff993f3e1ee8c4a8cc76522baed3ed0": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/dd/bfdd14e22c776a33d6951f6058dfc7a8c191cf": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/f0/44d4f8db3a67e35a6f14b9d46f13a32c5a604f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/dd/e00d9d45e3069348782cf09e07a71d4224048a": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/f5/c3fb2207fdd62dc9a9cda9805674f930697358": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/f2/09dd4a999e8f0194190d89ef7f0ea872002b49": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/d7/6e6c9c7f972448d70a28e2941c80ecff424a3e": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/c8/372f9877e67322508dc2b78ae04ab6f102db95": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/fc/6d88f20a614ce8e0ac8b4de67bb6ad7c2de1f7": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e0/8c2c011883e38b5038be5426a2eb3054e24290": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e2/1a18dc273108270255e8199871dcb9ca35db88": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/f9/c0efff9f8044258b155121b1855b9c03995176": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e3/e633b9c082b3474ab2ee2066adc6179da02caa": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/74/239014bb36b2e7909bd9d27669a9ca7410ba7e": {
       "isPinned": false,
       "isHidden": false
     },
@@ -1133,6 +1442,26 @@
         "origin"
       ],
       "sortOrder": "custom"
+    },
+    ".git/objects/e1/a58713e8c8c0f34931e8447538da1b6629d625": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/f8/618cf493dcfaceacfc3984eead9e5d2cdba19c": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/d8/c091d6174085e6221ec25123dcaf6ad9a7e60c": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/logs/refs/heads/main": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/refs/remotes/origin/main": {
+      "isPinned": false,
+      "isHidden": false
     },
     ".git/logs/refs/remotes/origin": {
       "isPinned": false,
@@ -1145,75 +1474,6 @@
     ".git/logs/refs/remotes/origin/main": {
       "isPinned": false,
       "isHidden": false
-    },
-    ".claude": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "skills"
-      ],
-      "sortOrder": "custom"
-    },
-    ".claude/skills": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "meeting-from-granola",
-        "vault-groom"
-      ],
-      "sortOrder": "custom"
-    },
-    ".claude/skills/vault-groom": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "SKILL.md"
-      ],
-      "sortOrder": "custom"
-    },
-    ".claude/skills/vault-groom/SKILL.md": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".claude/skills/meeting-from-granola": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [
-        "SKILL.md"
-      ],
-      "sortOrder": "custom"
-    },
-    ".claude/skills/meeting-from-granola/SKILL.md": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/63/dba3bf60375b771d87885c6706daecf8a46697": {
-      "isPinned": false,
-      "isHidden": false
-    },
-    ".git/objects/d7": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/c8": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/f9": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
-    },
-    ".git/objects/e2": {
-      "isPinned": false,
-      "isHidden": false,
-      "customOrder": [],
-      "sortOrder": "custom"
     }
   },
   "pinnedFiles": [],
