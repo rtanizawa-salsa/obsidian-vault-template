@@ -1,7 +1,7 @@
 ---
 name: daily-summary
 argument-hint: "[today (default) | YYYY-MM-DD]"
-description: Interview the user to fill in the current day's Obsidian daily note. Asks, one topic at a time, about tickets/tasks done, blocking issues found during the day, and open loops still remaining, then writes the answers into `6. Daily/<date>.md` using the vault's Daily template — preserving anything already there. Use when the user says "fill my daily note", "do my daily interview", "daily standup", or "wrap up my day".
+description: Interview the user to fill in the current day's Obsidian daily note. Checks Granola for meetings on that date missing from the Meetings folder, then asks, one topic at a time, about tickets/tasks done, blocking issues found during the day, and open loops still remaining, and writes the answers into `6. Daily/<date>.md` using the vault's Daily template — preserving anything already there. Use when the user says "fill my daily note", "do my daily interview", "daily standup", or "wrap up my day".
 ---
 
 You are interviewing the user to fill in their Obsidian daily note for a given day. Conduct a short, conversational interview — one topic at a time — then write the answers into the daily note, preserving anything already present. Do NOT invent activity; only record what the user tells you (plus context you surface for them to confirm).
@@ -24,14 +24,21 @@ State the resolved target day at the start of the run.
 ## Step 3 — (Optional) Jog memory from Linear
 To help the user recall what they touched, you MAY pull their recent Linear activity for the target day before interviewing — use `mcp__claude_ai_Linear__list_issues` filtered to issues assigned to / updated by them around the target date (resolve their user via `mcp__claude_ai_Linear__list_users` if needed). Present these as a short "Here's what I see you touched — anything to log?" list. Keep it lightweight; if Linear is unavailable or returns nothing, skip silently and just interview. Never write Linear items into the note without the user confirming them.
 
-## Step 4 — Conduct the interview
+## Step 4 — Check Granola for un-captured meetings
+Find meetings that happened on the target day but don't yet have a note in `5. Meetings/`:
+1. List the target day's Granola meetings — use `mcp__claude_ai_Granola__list_meetings` (or `mcp__claude_ai_Granola__query_granola_meetings`) and keep only those whose date is the target day. If Granola is unavailable or returns nothing, say so briefly and skip to Step 5.
+2. Glob `5. Meetings/` for existing notes dated the target day (filenames follow `<YYYY-MM-DD> - <Title>.md`). A Granola meeting is **un-captured** if no existing note has the same date and a matching title (compare case-insensitively, ignoring punctuation; treat a clear title match as captured even if not identical).
+3. Present the un-captured meetings as a short list and ask whether to create notes for them. For each one the user wants, create the note by following the **`meeting-from-granola`** skill's conventions — you already have the Granola meeting ID from step 1, so call `mcp__claude_ai_Granola__get_meetings` with that ID directly (no URL needed), write `5. Meetings/<YYYY-MM-DD> - <Title>.md`, and update the Meetings MOC. Do not create notes the user didn't confirm.
+4. Any meeting captured today (existing or newly created) is context for the interview — surface its decisions/commitments when asking about tasks and open loops.
+
+## Step 5 — Conduct the interview
 Ask about the three topics below **one at a time**, in order. Wait for the user's answer to each before moving on. Keep questions short and specific; ask a brief follow-up only when an answer is ambiguous (e.g. which project a ticket belongs to, or whether a blocker is now resolved). Don't over-interrogate — if they say "that's it" for a topic, move on.
 
 1. **Tickets & tasks done** — "What tickets or tasks did you work on or finish today?" For each, capture: the work, whether it's done or in progress, the project it rolls up to, and any ticket/PR link. Map these to the project-grouped Main objectives / Side objectives structure.
 2. **Blocking issues** — "Any blockers or issues that came up today — things that stopped or slowed you?" For each, capture what it is, who owns unblocking it (`[[Name]]`), and whether it's now resolved or still blocking.
 3. **Open loops remaining** — "What's still open — loops you need to pick back up?" Capture each as a to-do, attributing an owner with `[[Name]]` where relevant. Also confirm the status of any carry-over open loops you saw in Step 2 (resolved → check off; still open → keep).
 
-## Step 5 — Write the note
+## Step 6 — Write the note
 Write/Edit `6. Daily/<target-date>.md` following the Daily template structure exactly. Preserve all existing real content; merge new answers in.
 
 Template structure:
@@ -82,9 +89,10 @@ Conventions (match the existing daily notes exactly):
 - Keep "Non-negociable operational tasks" as-is; only check off "Update Obsidian" if the user confirms it's done.
 - Leave a section with genuinely nothing as `N/A` (side objectives) or a single `- ` placeholder, matching the template — don't fabricate filler.
 
-## Step 6 — Confirm and report
+## Step 7 — Confirm and report
 Show the user the filled sections (or a concise summary) and confirm it's written. Then report:
 - **Daily note:** `6. Daily/<target-date>.md` (created or updated)
+- **Meetings:** un-captured Granola meetings found, and which meeting notes you created (or "none")
 - **Logged:** counts — N tickets/tasks, N blockers, N open loops
 - **New `[[wikilinks]]`:** flag any people/projects referenced that don't yet have a note (suggest running `vault-groom` to create them)
 Do NOT commit or push — that's `vault-groom`'s job. If the user asks, offer to run it.
