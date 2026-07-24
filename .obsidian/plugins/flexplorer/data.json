@@ -1,0 +1,931 @@
+{
+  "items": {
+    "/": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        ".gitignore",
+        ".git",
+        "0. Templates",
+        "1. People",
+        "2. Projects",
+        "3. Decisions",
+        "4. Companies",
+        "5. Meetings",
+        "6. Daily",
+        "7. Knowledge",
+        "README.md",
+        "index.md",
+        "log.md",
+        "schema.md"
+      ]
+    },
+    "0. Templates": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "1. Person template.md",
+        "2. Project template.md",
+        "3. Decision template.md",
+        "4. Company template.md",
+        "5. Meeting template.md",
+        "6. Daily notes template.md"
+      ]
+    },
+    "0. Templates/1. Person template.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "0. Templates/2. Project template.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "0. Templates/3. Decision template.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "0. Templates/4. Company template.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "0. Templates/5. Meeting template.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "0. Templates/6. Daily notes template.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "1. People": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "0. People MOC.md",
+        "Alex.md",
+        "Jordan.md",
+        "Priya.md",
+        "Sam.md"
+      ]
+    },
+    "1. People/0. People MOC.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "1. People/Alex.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "1. People/Jordan.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "1. People/Priya.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "1. People/Sam.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "2. Projects": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "2026-01-08 - Search v2.md",
+        "2026-01-15 - Onboarding Revamp.md",
+        "Projects MOC.md"
+      ]
+    },
+    "2. Projects/2026-01-08 - Search v2.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "2. Projects/2026-01-15 - Onboarding Revamp.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "2. Projects/Projects MOC.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "3. Decisions": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "2026-01-20 - Adopt feature flags.md",
+        "Decisions MOC.md"
+      ]
+    },
+    "3. Decisions/2026-01-20 - Adopt feature flags.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "3. Decisions/Decisions MOC.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "4. Companies": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "Acme Analytics.md",
+        "Companies MOC.md",
+        "Globex Cloud.md",
+        "Initech Auth.md"
+      ]
+    },
+    "4. Companies/Acme Analytics.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "4. Companies/Companies MOC.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "4. Companies/Globex Cloud.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "4. Companies/Initech Auth.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "5. Meetings": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "2026-01-22 - Weekly team sync.md",
+        "Meetings MOC.md"
+      ]
+    },
+    "5. Meetings/2026-01-22 - Weekly team sync.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "5. Meetings/Meetings MOC.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "6. Daily": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "2026-01-22.md"
+      ]
+    },
+    "6. Daily/2026-01-22.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "7. Knowledge": {
+      "isPinned": false,
+      "isHidden": false,
+      "sortOrder": "custom",
+      "customOrder": [
+        "0. Knowledge MOC.md",
+        "Glossary.md",
+        "Release process.md"
+      ]
+    },
+    "7. Knowledge/0. Knowledge MOC.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "7. Knowledge/Glossary.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "7. Knowledge/Release process.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "README.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "index.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "log.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    "schema.md": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "logs",
+        "refs",
+        "objects",
+        "description",
+        "info",
+        "index",
+        "hooks",
+        "config",
+        "HEAD",
+        "COMMIT_EDITMSG"
+      ],
+      "sortOrder": "custom"
+    },
+    ".gitignore": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/COMMIT_EDITMSG": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/HEAD": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/config": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "prepare-commit-msg.sample",
+        "update.sample",
+        "pre-rebase.sample",
+        "push-to-checkout.sample",
+        "pre-receive.sample",
+        "pre-push.sample",
+        "pre-commit.sample",
+        "commit-msg.sample",
+        "pre-merge-commit.sample",
+        "pre-applypatch.sample",
+        "post-update.sample",
+        "applypatch-msg.sample",
+        "fsmonitor-watchman.sample"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/index": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/info": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "exclude"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/description": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "info",
+        "pack",
+        "f8",
+        "ea",
+        "e3",
+        "f2",
+        "e1",
+        "e0",
+        "c0",
+        "d8",
+        "dd",
+        "b9",
+        "a8",
+        "82",
+        "90",
+        "78",
+        "76",
+        "77",
+        "75",
+        "66",
+        "65",
+        "61",
+        "5f",
+        "62",
+        "58",
+        "3c",
+        "39",
+        "35",
+        "2e",
+        "2d",
+        "33",
+        "28",
+        "26",
+        "10",
+        "12",
+        "0e",
+        "04",
+        "0b"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/refs": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "tags",
+        "heads"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/logs": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "refs",
+        "HEAD"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/hooks/fsmonitor-watchman.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/applypatch-msg.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/post-update.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/pre-applypatch.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/pre-merge-commit.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/commit-msg.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/pre-commit.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/pre-push.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/pre-receive.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/push-to-checkout.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/pre-rebase.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/info/exclude": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/update.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/hooks/prepare-commit-msg.sample": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/0b": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "98be45f9063b9f8548a5ef32a44c0548a11424"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/04": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "b96e92308987c21348e7e59b74735fb95695d1",
+        "7466586754675b45c563164487502ec3b6b885"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/0e": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "9e32f89d67c270cfd3472560c2331736b395d6"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/12": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "d7c52c3865361103cc0c414ef1c9b5662f88fd"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/10": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "c04a01c77f9a33b3b144a349d2bfc2d7453201",
+        "a222d92fd42cf9ca9c6e12afd2ebe6098e784e"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/26": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "9bd835f7498c07c86ab69035d7e4a12c889c73",
+        "96820e43d5cf11b19e9600a6519f6ddd8fe031"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/28": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "97ce2d4eebd14540f546a76157d16881d9f8b0"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/33": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "5d8b78dd531a4d07b920e3c2ae1820a0d11833",
+        "0697f9b6a20e39a44c7cdef7cdc24cf1410c50"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/2d": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "97494ebd2898643a0a47afe49fb2d282c62274"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/2e": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "2b3e1be09e77ee057ec1632f68ca06a7e1d945"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/35": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "9d91257de26b93eb4eccbf407db08fea8f6fd4"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/39": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "70d4e65ff2b2e36da82f8dfde5fc08c28febb9"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/3c": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "f0fdb75c49445d4d4a1f74fad238ca1c9e898f"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/58": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "b369bc139c626d62a1a60633aaab987c887492"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/62": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "3d2066bc6a1c910830a97bcd0856445785ef7e"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/5f": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "b61ec56f032f76e297312e0ed03c8e6537dadb"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/61": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "a94209f5d8ebac73bec45e3130ee57ea052d6a"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/65": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "e7ed9d3530d0a2c4a0c0a06ee66f72f6cc96ef"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/66": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "fc2d431caa6cfed5af62c643d074303eed0dd8"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/75": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "6ae20606d23ae36b5d911d07784d3fe78dfca2"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/77": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "46f942c13ebe0ef0869d05c67fd9ad52ddb026"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/76": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "9f77552bd4fb8e718d4b00881c4de424792ce7"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/78": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "cbc1dd6bd61c79dd0ce7bc2c02d59228ae465f"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/90": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "c9803cedbc5c1f986992b13f3b27f13734d3be"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/82": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "091fbafb6e10de2168f6f63561c4856e4e23eb"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/a8": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "bf70b58df605ee5ca3eda8768c53fe4b716c14"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/b9": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "9149e007224c0805a73322dde9b7d4d3ac8d70"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/dd": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "bfdd14e22c776a33d6951f6058dfc7a8c191cf"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/d8": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "c091d6174085e6221ec25123dcaf6ad9a7e60c"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/c0": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "0e1c420ecafed3b7b557f308fa6c06f19d785f"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/e0": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "8c2c011883e38b5038be5426a2eb3054e24290"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/e1": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "51fd3e772a56444a1eb7d95a45f0ea7c203bba",
+        "a58713e8c8c0f34931e8447538da1b6629d625"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/f2": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "09dd4a999e8f0194190d89ef7f0ea872002b49"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/e3": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "e633b9c082b3474ab2ee2066adc6179da02caa"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/ea": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "1f1a1860e241d045395cd55ff63583fbc97287"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/refs/heads": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "main"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/refs/tags": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [],
+      "sortOrder": "custom"
+    },
+    ".git/objects/f8": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "618cf493dcfaceacfc3984eead9e5d2cdba19c"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/pack": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [],
+      "sortOrder": "custom"
+    },
+    ".git/objects/info": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [],
+      "sortOrder": "custom"
+    },
+    ".git/logs/HEAD": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/logs/refs": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "heads"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/04/7466586754675b45c563164487502ec3b6b885": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/0b/98be45f9063b9f8548a5ef32a44c0548a11424": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/12/d7c52c3865361103cc0c414ef1c9b5662f88fd": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/04/b96e92308987c21348e7e59b74735fb95695d1": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/0e/9e32f89d67c270cfd3472560c2331736b395d6": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/10/a222d92fd42cf9ca9c6e12afd2ebe6098e784e": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/10/c04a01c77f9a33b3b144a349d2bfc2d7453201": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/28/97ce2d4eebd14540f546a76157d16881d9f8b0": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/26/96820e43d5cf11b19e9600a6519f6ddd8fe031": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/33/0697f9b6a20e39a44c7cdef7cdc24cf1410c50": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/33/5d8b78dd531a4d07b920e3c2ae1820a0d11833": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/2d/97494ebd2898643a0a47afe49fb2d282c62274": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/2e/2b3e1be09e77ee057ec1632f68ca06a7e1d945": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/39/70d4e65ff2b2e36da82f8dfde5fc08c28febb9": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/26/9bd835f7498c07c86ab69035d7e4a12c889c73": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/58/b369bc139c626d62a1a60633aaab987c887492": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/3c/f0fdb75c49445d4d4a1f74fad238ca1c9e898f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/62/3d2066bc6a1c910830a97bcd0856445785ef7e": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/5f/b61ec56f032f76e297312e0ed03c8e6537dadb": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/65/e7ed9d3530d0a2c4a0c0a06ee66f72f6cc96ef": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/61/a94209f5d8ebac73bec45e3130ee57ea052d6a": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/66/fc2d431caa6cfed5af62c643d074303eed0dd8": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/35/9d91257de26b93eb4eccbf407db08fea8f6fd4": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/75/6ae20606d23ae36b5d911d07784d3fe78dfca2": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/77/46f942c13ebe0ef0869d05c67fd9ad52ddb026": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/76/9f77552bd4fb8e718d4b00881c4de424792ce7": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/90/c9803cedbc5c1f986992b13f3b27f13734d3be": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/82/091fbafb6e10de2168f6f63561c4856e4e23eb": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/a8/bf70b58df605ee5ca3eda8768c53fe4b716c14": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/b9/9149e007224c0805a73322dde9b7d4d3ac8d70": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/78/cbc1dd6bd61c79dd0ce7bc2c02d59228ae465f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/d8/c091d6174085e6221ec25123dcaf6ad9a7e60c": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/c0/0e1c420ecafed3b7b557f308fa6c06f19d785f": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/dd/bfdd14e22c776a33d6951f6058dfc7a8c191cf": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e0/8c2c011883e38b5038be5426a2eb3054e24290": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/f2/09dd4a999e8f0194190d89ef7f0ea872002b49": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e1/a58713e8c8c0f34931e8447538da1b6629d625": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e1/51fd3e772a56444a1eb7d95a45f0ea7c203bba": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/e3/e633b9c082b3474ab2ee2066adc6179da02caa": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/refs/heads/main": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/objects/f8/618cf493dcfaceacfc3984eead9e5d2cdba19c": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/logs/refs/heads": {
+      "isPinned": false,
+      "isHidden": false,
+      "customOrder": [
+        "main"
+      ],
+      "sortOrder": "custom"
+    },
+    ".git/objects/ea/1f1a1860e241d045395cd55ff63583fbc97287": {
+      "isPinned": false,
+      "isHidden": false
+    },
+    ".git/logs/refs/heads/main": {
+      "isPinned": false,
+      "isHidden": false
+    }
+  },
+  "pinnedFiles": [],
+  "showHidden": false,
+  "newItemPlacement": "top",
+  "persistOrderOnCreateDelete": true,
+  "debugMode": false
+}
