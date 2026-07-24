@@ -94,12 +94,12 @@ This template pairs with the community plugins below. Plugin config is not shipp
 
 ## Automating with Claude Code (skills)
 
-This vault pairs well with [Claude Code](https://claude.com/claude-code) for maintenance. Add your own skills under `.claude/skills/` and invoke them by slash command in a Claude Code session pointed at this folder. Two examples worth building:
+This vault pairs well with [Claude Code](https://claude.com/claude-code) for maintenance. It ships with two example skills under `.claude/skills/` — invoke them by slash command in a Claude Code session pointed at this folder, or adapt them / add your own:
 
 | Skill | Invoke | What it does |
 | --- | --- | --- |
 | **vault-groom** | `/vault-groom [today \| yesterday \| YYYY-MM-DD]` | Grooms a day's notes: creates orphan notes for newly referenced people/projects/companies, consolidates duplicates, updates the MOCs, and flags strategic items. |
-| **meeting-from-\<source\>** | `/meeting-from-<source> <url>` | Turns a meeting URL/transcript into a note in `5. Meetings/` using the Meeting template, then updates the Meetings MOC. |
+| **meeting-from-granola** | `/meeting-from-granola <url>` | Turns a [Granola](https://granola.ai) meeting URL into a note in `5. Meetings/` using the Meeting template, then updates the Meetings MOC. *Requires the Granola connector* — swap in your own meeting source if you don't use it. |
 
 ### Scheduling a skill (Claude Code desktop)
 
