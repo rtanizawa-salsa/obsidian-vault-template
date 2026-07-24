@@ -1,7 +1,7 @@
 ---
 name: daily-summary
 argument-hint: "[today (default) | YYYY-MM-DD]"
-description: Interview the user to fill in the current day's Obsidian daily note. Pulls the day's Linear activity (issues done/started/created/updated and comments made) for confirmation, checks Granola and Fathom for meetings on that date missing from the Meetings folder (de-duplicating across the two sources), records substantive decisions from those meetings into the Decisions folder, then asks, one topic at a time, about tickets/tasks done, blocking issues found during the day, and open loops still remaining, and writes the answers into `6. Daily/<date>.md` using the vault's Daily template — preserving anything already there. Use when the user says "fill my daily note", "do my daily interview", "daily standup", or "wrap up my day".
+description: Interview the user to fill in the current day's Obsidian daily note. Pulls the day's Linear activity (issues done/started/created/updated and comments made) for confirmation, checks Granola and Fathom for meetings on that date missing from the Meetings folder (de-duplicating across the two sources), then asks, one topic at a time, about tickets/tasks done, blocking issues found during the day, and open loops still remaining, and writes the answers into `6. Daily/<date>.md` using the vault's Daily template — preserving anything already there. Use when the user says "fill my daily note", "do my daily interview", "daily standup", or "wrap up my day".
 ---
 
 You are interviewing the user to fill in their Obsidian daily note for a given day. Conduct a short, conversational interview — one topic at a time — then write the answers into the daily note, preserving anything already present. Do NOT invent activity; only record what the user tells you (plus context you surface for them to confirm).
@@ -56,12 +56,7 @@ Find meetings that happened on the target day but don't yet have a note in `5. M
    - **Fathom-sourced** → follow **`meeting-from-fathom`**; you already have the `recording_id`, so call `mcp__claude_ai_Fathom__get_meeting_summary` (and `mcp__claude_ai_Fathom__get_meeting_transcript` if you need quotes) directly.
    - **In both sources** → create a single note from the richer source (fall back to Granola if comparable) and include the other source's link under Key Links.
    - **Always trim attendees to who actually attended.** Cross-check the transcript/summary and drop invited-but-absent people (anyone noted as out, or who never participated). Fathom's `calendar_invitees` are *invitees*, not proof of attendance, so this matters especially for Fathom-sourced notes.
-4. Any meeting captured today (existing or newly created) is context for the interview — surface its decisions/commitments when asking about tasks and open loops.
-5. **Record decisions taken in those meetings into `3. Decisions/`.** For each meeting captured for the target day (an existing note or one you just created), read its `## Decisions` section. Treat as a candidate only a **substantive** decision — a choice with lasting effect (vendor/tooling/architecture/process/scope), not a routine task, scheduling note, or restatement of a commitment. For each candidate, glob `3. Decisions/` and skip any that already has a note on the same subject (don't duplicate). Present the remaining candidates and ask the user which warrant a Decision note; create only the ones they confirm. For each confirmed decision, write `3. Decisions/<YYYY-MM-DD> - <Short title>.md` (date = the meeting date) using the vault's Decision template at `0. Templates/3. Decision template.md`:
-   - Set `status: decided` for a decision that was actually made; `status: pending` if it was tabled/still open. Add lowercase topic tags after `decisions`.
-   - Fill **Decision** (what was decided), **Why** (rationale if stated), **Alternatives considered**, **Decision Owner** (`[[Name]]`), **Revisit Trigger**, and **AI Recall**. Omit a section only when there's genuinely nothing for it, matching how existing decision notes are written — don't fabricate.
-   - Reference the source meeting inline with a `- Decided in [[<YYYY-MM-DD> - <Meeting Title>]]` line so the decision traces back to its meeting.
-   - Add `- [[<YYYY-MM-DD> - <Short title>]]` to `3. Decisions/Decisions MOC.md`.
+4. Any meeting captured today (existing or newly created) is context for the interview — surface its decisions/commitments when asking about tasks and open loops. (Turning meeting decisions into notes in `3. Decisions/` is `vault-groom`'s job, not this skill's.)
 
 ## Step 5 — Conduct the interview
 Ask about the three topics below **one at a time**, in order. Wait for the user's answer to each before moving on. Keep questions short and specific; ask a brief follow-up only when an answer is ambiguous (e.g. which project a ticket belongs to, or whether a blocker is now resolved). Don't over-interrogate — if they say "that's it" for a topic, move on.
@@ -127,8 +122,7 @@ Conventions (match the existing daily notes exactly):
 Show the user the filled sections (or a concise summary) and confirm it's written. Then report:
 - **Daily note:** `6. Daily/<target-date>.md` (created or updated)
 - **Linear:** counts of activity surfaced and confirmed — N done, N started/in review, N created, N updated, N commented (or "none")
-- **Meetings:** un-captured Granola meetings found, and which meeting notes you created (or "none")
-- **Decisions:** which Decision notes you created in `3. Decisions/` from the day's meetings (or "none")
+- **Meetings:** un-captured Granola/Fathom meetings found, and which meeting notes you created (or "none")
 - **Logged:** counts — N tickets/tasks, N blockers, N open loops
 - **New `[[wikilinks]]`:** flag any people/projects referenced that don't yet have a note (suggest running `vault-groom` to create them)
 Do NOT commit or push — that's `vault-groom`'s job. If the user asks, offer to run it.
