@@ -25,6 +25,7 @@ A personal knowledge base optimized for both human and LLM use. Notes are small,
 | `6. Daily/` | `daily` | One note per day | `YYYY-MM-DD.md` |
 | `7. Knowledge/` | (untyped/reference) | Durable reference notes, policies, facts | `<Topic>.md` |
 | `8. MOC/` | (map) | Top-level Maps of Content | `<Name> MOC.md` |
+| `9. Sources/` | (transient) | Raw source material staged for distillation into `7. Knowledge/`; deleted after processing | `<original filename>` |
 
 ## Note types and frontmatter
 

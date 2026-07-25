@@ -1,7 +1,7 @@
 ---
 name: vault-groom
 argument-hint: "[today (default) | yesterday | YYYY-MM-DD]"
-description: Grooming of the user's Obsidian vault. Processes a target day's notes — creates orphan files for referenced people/projects/companies, captures substantive meeting decisions into the Decisions folder, consolidates duplicates, updates MOCs, and flags strategic items. Defaults to TODAY; pass "yesterday" for the previous business day, or a YYYY-MM-DD date for a specific day. Use when asked to "groom the vault", run the daily/weekday vault cleanup, or process a day's Obsidian notes. Runs fully automatically without asking for approval.
+description: Grooming of the user's Obsidian vault. Processes a target day's notes — creates orphan files for referenced people/projects/companies, captures substantive meeting decisions into the Decisions folder, distills durable reference facts into Knowledge candidates, consolidates duplicates, updates MOCs, and flags strategic items. Defaults to TODAY; pass "yesterday" for the previous business day, or a YYYY-MM-DD date for a specific day. Use when asked to "groom the vault", run the daily/weekday vault cleanup, or process a day's Obsidian notes. Runs fully automatically without asking for approval.
 ---
 
 You are grooming the user's Obsidian vault. Run fully automatically — create, consolidate, and update files without asking for approval — then report what you did in chat.
@@ -83,16 +83,47 @@ Turn substantive decisions made in the day's meetings into Decision notes. Read 
 - Add a `- Decided in [[<YYYY-MM-DD> - <Meeting Title>]]` line so the decision traces back to its source meeting.
 - Add the new note to `3. Decisions/Decisions MOC.md`.
 
-## Step 5 — Consolidate duplicates
+## Step 5 — Distill knowledge candidates
+This is the "consolidation into long-term memory" pass: promote durable, reusable facts out of the day's raw notes toward the `7. Knowledge/` reference layer. Because Knowledge notes are hand-curated and high-effort, **do not auto-create or auto-edit them** — propose candidates into an inbox for the user to promote.
+
+Scan the target-day notes (meetings, the day's Decision notes, and the daily note) for **knowledge**, which is different from a decision or an event:
+- **Knowledge** = a durable, reusable fact — how something works, a policy/rule, a canonical value or spec (cutoff time, limit, id format, party role), a definition. It stays true across days and is worth looking up later.
+- Not knowledge: a point-in-time choice (that's a **Decision**, handled in Step 4), or what happened / who said what (that stays in the meeting note).
+Strong signals a fact is knowledge: it's phrased as a general rule/policy/spec, it's a concrete durable number or identifier, or the same fact is referenced across multiple notes.
+
+Then:
+1. Glob and read `7. Knowledge/` (the existing reference notes) and the candidates inbox `7. Knowledge/Knowledge candidates.md`. **Dedupe:** skip any fact already covered by an existing Knowledge note or already listed in the inbox.
+2. Classify each genuine new candidate:
+   - **New note** — no existing Knowledge note covers the topic → propose a note title and `area`.
+   - **Update** — an existing Knowledge note covers the topic but is missing this fact (e.g. a new step or edge case for `Release process`) → name the target note and what to add.
+3. Append each to `7. Knowledge/Knowledge candidates.md` (create it if missing, using the frontmatter below) as an unchecked checkbox item with: the fact in 1–2 lines, the proposed target (**New note:** `<title>` / **Update:** `[[Existing note]]`), a `Source:` `[[wikilink]]` back to the note it came from, and a confidence (high/medium/low).
+4. Also list these candidates in the chat report (Output section) so the user can promote them immediately.
+
+Only surface high-signal, durable facts — a handful at most per day, not every stray statement. If nothing qualifies, do nothing and report "none". Never fabricate a fact to fill the inbox.
+
+Candidates inbox frontmatter (only when creating the file):
+```
+---
+type: knowledge
+tags:
+  - knowledge
+  - inbox
+---
+# Knowledge candidates (inbox)
+
+Durable facts vault-groom distilled from daily notes, pending promotion into `7. Knowledge/`. Review, then move each into a real Knowledge note and delete the line.
+```
+
+## Step 6 — Consolidate duplicates
 Look for duplicate or near-duplicate notes about the same person/project/company/topic (including loose top-level files like `Hawk proxy issue.md` that belong inside a numbered folder). Merge them: keep the best-located canonical file, fold in unique content from the others, update all `[[links]]` that pointed to the removed notes, and delete the redundant files. Preserve all substantive information.
 
-## Step 6 — Update MOCs (Maps of Content)
+## Step 7 — Update MOCs (Maps of Content)
 The vault has no MOC index notes yet. Maintain one index note per relevant category at the folder root, named `<N>. <Category>/<Category> MOC.md` (e.g. `1. People/People MOC.md`), with `type: moc` frontmatter and a linked list of the notes in that category grouped sensibly. Create the MOC if missing; otherwise add links for any new notes from this run. Only touch MOCs for categories that gained or changed notes.
 
-## Step 7 — Flag strategic items for review
+## Step 8 — Flag strategic items for review
 From the target-day content, surface anything strategic the user should review before today's work: open decisions, commitments/deadlines, blockers, risks, or high-signal items. These are for the chat report only — do not create task files for them.
 
-## Step 8 — Commit and push
+## Step 9 — Commit and push
 After grooming is complete, commit and push all changes so the vault stays synced:
 1. Append a one-line summary of this grooming run to `log.md` under today's `## YYYY-MM-DD` heading (newest first) — e.g. what was created/consolidated. Create the date heading if it doesn't exist.
 2. Stage everything (`git add -A`), commit to `main` with a message like `chore: vault groom <target-date>`, and push to `origin main`. Do not create a branch — this is a personal sync repo.
@@ -103,6 +134,7 @@ Report concisely in this structure:
 - **Target day processed:** <date> (and how many notes were touched)
 - **Orphan notes created:** list each new file with a one-line reason
 - **Decision notes created:** each new `3. Decisions/` note and the meeting it came from (or "none")
+- **Knowledge candidates:** each durable fact added to the inbox — the fact, its proposed target (new note or `[[existing note]]` to update), and confidence (or "none")
 - **Consolidations:** each merge (what folded into what, what was deleted)
 - **MOCs updated:** which index notes changed
 - **⚠️ Flagged for your review:** the strategic items, most important first
