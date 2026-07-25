@@ -4,10 +4,12 @@ tags:
   - system
   - moc
 ---
-# 8. MOC — cross-cutting Maps of Content
+# 8. MOC — topic Maps of Content
 
-Home for **top-level, cross-cutting** Maps of Content that span multiple folders (e.g. a themed index pulling together people, projects, and meetings around one initiative).
+Home for **topic hubs**. A Map of Content here aggregates multiple related notes about the same subject into one page — most often several `7. Knowledge/` pages that together cover one topic, plus any related people, projects, meetings, or decisions.
 
-Per-folder indexes live *inside* their folder as `<Name> MOC.md` (e.g. `1. People/People MOC.md`). Use this folder only for maps that don't belong to any single folder.
+Use it when a topic has spread across enough notes that a single index makes them easier to navigate as a set (e.g. a `Release MOC` linking the release-process note and related release decisions).
 
-Naming: `<Name> MOC.md`, with `type: moc` frontmatter.
+Per-folder indexes (e.g. `1. People/People MOC.md`) stay inside their own folder. `8. MOC/` is only for cross-cutting topic maps that span folders.
+
+Naming: `<Topic> MOC.md`, with `type: moc` frontmatter and a linked list of the notes it aggregates.
