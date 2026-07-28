@@ -68,47 +68,16 @@ Lead with the Linear activity the user confirmed in Step 3 — treat those as al
 3. **Open loops remaining** — "What's still open — loops you need to pick back up?" Capture each as a to-do, attributing an owner with `[[Name]]` where relevant. Also confirm the status of any carry-over open loops you saw in Step 2 (resolved → check off; still open → keep).
 
 ## Step 6 — Write the note
-Write/Edit `6. Daily/<target-date>.md` following the Daily template structure exactly. Preserve all existing real content; merge new answers in.
+Write/Edit `6. Daily/<target-date>.md` using `0. Templates/6. Daily notes template.md` verbatim as the structure — same frontmatter keys, same sections, same order. Preserve all existing real content; merge new answers in.
 
-Template structure:
-```
----
-type: daily
-weekly-plan: <"[[... - Personal weekly planning]]" if known>
-date: <target-date>
-tags:
-  - daily
----
-# Daily summary
-
-## Main objectives
-
-- [[<YYYY-MM-DD> - Project name]]
-	- [x] Completed task / note about progress
-	- [ ] Task still in progress
-
-## Side objective 1
-
-- <side work>
-
-## Side objective 2
-
-- N/A
-
-## Non-negociable operational tasks
-
-- [ ] Update Obsidian
-
----
-## Decisions / Signals
-
-- <decisions made or notable signals; also resolved blockers worth remembering>
-
-## Open loops
-
-- [ ] <open loop>. [[Owner]] is handling this
-- [x] <loop resolved today>
-```
+Fill it in as follows:
+- `weekly-plan` — the `"[[... - Personal weekly planning]]"` link if known.
+- `date` — the target date.
+- **Main objectives** — the day's tickets/tasks, grouped as sub-bullets beneath the `[[<YYYY-MM-DD> - Project name]]` note they belong to.
+- **Side objective 1 / 2** — side work, or `N/A`.
+- **Non-negociable operational tasks** — leave the template's items as-is.
+- **Decisions / Signals** — decisions made or notable signals; also resolved blockers worth remembering.
+- **Open loops** — `- [ ] <open loop>. [[Owner]] is handling this` for open, `- [x]` for resolved today.
 
 Conventions (match the existing daily notes exactly):
 - **Tickets/tasks done** go under Main objectives, grouped as sub-bullets beneath the `[[YYYY-MM-DD - Project]]` note they belong to. Use `- [x]` for done, `- [ ]` for in progress, or a plain `- ` sub-bullet for a progress note. Work that doesn't fit a tracked project goes under a Side objective. Include PR/ticket URLs inline when given.

@@ -39,26 +39,14 @@ Before writing anything, Glob and Read `7. Knowledge/` so you know what already 
 Also check the candidates inbox `7. Knowledge/Knowledge candidates.md`: if a fact you're now writing as a real note was sitting there as a candidate, remove that candidate line — it's been promoted.
 
 ## Step 5 — Write the Knowledge notes
-Create each new note as `7. Knowledge/<Topic>.md` using this shape (mirroring the existing Knowledge notes):
-```
----
-type: knowledge
-area: <e.g. Engineering, Process, Product — omit if genuinely unclear>
-tags:
-  - knowledge
-  - <lowercase topic tags>
----
-# <Topic>
+Read `0. Templates/7. Knowledge template.md` and use it verbatim as each new note's structure — same frontmatter keys, same sections, same order. Create each note as `7. Knowledge/<Topic>.md` and fill it in as follows:
+- `area` — e.g. Engineering, Process, Product. Leave blank if genuinely unclear.
+- `tags` — keep `knowledge`, then add lowercase topic tags.
+- `# <heading>` — the topic.
+- **Summary** — 2–4 lines: what this topic is and why it matters.
+- **Details** — the clean, structured distillation: sub-headings per aspect, tables for canonical values, blockquotes for verbatim rules. Faithful to the source; deduplicated; organized for lookup, not narrative.
+- **Source** — first bullet is the source title / document name, then `Type:` (PDF | article | transcript | spec | webpage), `Origin:` (author / publisher / URL if any), and `Processed:` (`YYYY-MM-DD` — get today's date with a shell `date` command).
 
-<Clean, structured distillation — headings, tables, lists, blockquotes for verbatim rules.
-Faithful to the source; deduplicated; organized for lookup, not narrative.>
-
-## Source
-- <Source title / document name>
-- Type: <PDF | article | transcript | spec | webpage>
-- Origin: <author / publisher / URL if any>
-- Processed: <YYYY-MM-DD — get today's date with a shell `date` command>
-```
 Provenance rules for `## Source`:
 - Capture enough that the knowledge stays traceable **after the raw source file is deleted** from `9. Sources/`.
 - For a URL, record the full link. For a file, record its original filename and any title/author inside it.

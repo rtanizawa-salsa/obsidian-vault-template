@@ -30,44 +30,19 @@ Capture from the resolution (and from `list_meetings` when that's the entry path
 2. If you need exact quotes, decisions aren't clear from the summary, or the summary is thin, also call `mcp__claude_ai_Fathom__get_meeting_transcript` with the `recording_id` and `url` and summarize from it. The transcript segments carry timestamped deep links (`[MM:SS](url?timestamp=secs)`) — you may cite a decision or commitment with one.
 
 ## Step 3 — Meeting note template
-Follow the vault's Meeting template exactly. Filename: `5. Meetings/<YYYY-MM-DD> - <Title>.md`, where the date is the meeting date and the title is the Fathom recording title (strip characters illegal in filenames: `/ \ : * ? " < > |`).
+Read `0. Templates/5. Meeting template.md` and use it verbatim as the note's structure — same frontmatter keys, same sections, same order. Filename: `5. Meetings/<YYYY-MM-DD> - <Title>.md`, where the date is the meeting date and the title is the Fathom recording title (strip characters illegal in filenames: `/ \ : * ? " < > |`).
 
-```
----
-type: meeting
-date: <YYYY-MM-DD>
-tags:
-  - meetings
-  - <topic tags, lowercase>
-attendees:
-  - "[[Name]]"
----
-## Summary
+Fill it in as follows:
+- `date` — the meeting date (`YYYY-MM-DD`).
+- `tags` — keep `meetings`, then add relevant lowercase topic tags (e.g. `garnishments`, `payments`).
+- `attendees` — a list of `"[[Name]]"` entries by first name (match how existing People notes are named — check `1. People/`). Derive them from `calendar_invitees` + `recorded_by`; use the person's name as it appears in the vault.
+- **Summary** — 1–3 paragraphs from Fathom.
+- **Decisions** — decisions made, one per line.
+- **Commitments** — action items / follow-ups, ideally attributed with `[[Name]]`.
+- **Preferences captured** — stated preferences or working styles.
+- **Key Links** — always include `[Fathom recording](<meeting url>)`. You may add timestamped deep links for specific decisions/commitments.
 
-<1–3 paragraph summary from Fathom>
-
-## Decisions
-
-- <decisions made, one per line; "- " if none>
-
-## Commitments
-
-- <action items / follow-ups, ideally attributed with [[Name]]; "- " if none>
-
-## Preferences captured
-
-- <stated preferences or working styles; "- " if none>
-
-## Key Links
-
-- [Fathom recording](<meeting url>)
-```
-
-Conventions:
-- Attendees are `[[Wikilink]]` references by first name (match how existing People notes are named — check `1. People/`). Derive them from `calendar_invitees` + `recorded_by`; use the person's name as it appears in the vault.
-- Add relevant lowercase topic tags after `meetings` (e.g. `garnishments`, `payments`).
-- Always include the Fathom recording URL under Key Links. You may add timestamped deep links for specific decisions/commitments.
-- Keep sections that have no content as a single `- ` placeholder, matching the template.
+Keep sections that have no content as the template's single `- ` placeholder.
 
 ## Step 4 — Write the note
 Write the file to `5. Meetings/<YYYY-MM-DD> - <Title>.md`. If a note with that exact filename already exists, do not overwrite — report that it exists and ask the user whether to overwrite or create a variant.

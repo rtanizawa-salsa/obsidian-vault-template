@@ -28,56 +28,26 @@ State the resolved target day at the start of your run so it's clear which day i
 Folders: `1. People`, `2. Projects`, `3. Decisions`, `4. Companies`, `5. Meetings`, `6. Daily`, `7. Knowledge`.
 Links use `[[Wikilink]]` style. Every note starts with YAML frontmatter including `type`, and `tags` (lowercase). People/company notes also have `status: active`.
 
-Person note template (`1. People/<Name>.md`):
-```
----
-type: person
-status: active
-role:
-tags:
-  - people
----
+Every note you create comes from a template file in `0. Templates/`. **Read the matching template and use it verbatim** — same frontmatter keys, same sections, same order — then fill in what the context supports. Never retype a structure from memory; the template file is the source of truth.
 
-## Role
+| Note | Path | Template |
+| --- | --- | --- |
+| Person | `1. People/<Name>.md` | `0. Templates/1. Person template.md` |
+| Project | `2. Projects/<YYYY-MM-DD> - <Name>.md` | `0. Templates/2. Project template.md` |
+| Decision | `3. Decisions/<YYYY-MM-DD> - <Short title>.md` | `0. Templates/3. Decision template.md` |
+| Company | `4. Companies/<Company>.md` | `0. Templates/4. Company template.md` |
+| Meeting | `5. Meetings/<YYYY-MM-DD> - <Title>.md` | `0. Templates/5. Meeting template.md` |
+| Daily | `6. Daily/<YYYY-MM-DD>.md` | `0. Templates/6. Daily notes template.md` |
+| Knowledge | `7. Knowledge/<Subject>.md` | `0. Templates/7. Knowledge template.md` |
+| MOC | `<N>. <Category>/<Category> MOC.md` | `0. Templates/8. MOC template.md` |
 
-## Context
-
-## What they care about
-
-## Active Links
-
-## Communication Notes
-
-## AI Recall Notes
-```
-
-Company note template (`4. Companies/<Company>.md`):
-```
----
-type: companies
-status: active
-industry:
-tags:
-  - companies
----
-## Company Summary
-
-## Why this company matters
-
-## Relevant Links
-
-## Current relationship
-
-## AI Recall
-```
-
-Project note template (`2. Projects/<YYYY-MM-DD> - <Name>.md`): frontmatter `type: project`, `status: active`, `tags: [projects]`, then sections `## Summary`, `## Status`, `## Key Links`, `## Decisions`.
+Add lowercase topic tags after the template's own `type` tag (e.g. `people` → `people`, `platform`).
 
 ## Step 3 — Create orphan notes
-Scan the target-day notes for mentions of people, projects, or companies that are referenced (as `[[X]]` links OR named in prose) but do NOT yet have their own file in the matching folder. For each genuine new entity, create a file using the correct template above, pre-filling anything you can confidently infer from the context (role, company, why it matters). Add a `[[wikilink]]` back-reference where natural. Do not create notes for trivial or ambiguous mentions.
+Scan the target-day notes for mentions of people, projects, or companies that are referenced (as `[[X]]` links OR named in prose) but do NOT yet have their own file in the matching folder. For each genuine new entity, read the template from the table above and create the file from it, pre-filling anything you can confidently infer from the context (role, team, company, why it matters) and leaving the rest as the template's own placeholders. Add a `[[wikilink]]` back-reference where natural. Do not create notes for trivial or ambiguous mentions.
 
 ## Step 4 — Capture decisions from the day's meetings
-Turn substantive decisions made in the day's meetings into Decision notes. Read the `## Decisions` section of every meeting note dated the target day in `5. Meetings/`, plus any decisions logged in the daily note's `## Decisions / Signals` section. Keep only **substantive** decisions — choices with lasting effect (vendor/tooling/architecture/process/scope), not routine tasks, scheduling notes, or restatements of commitments. For each, glob `3. Decisions/` and skip any already covered by an existing note on the same subject (don't duplicate). Create the rest automatically (no approval needed) as `3. Decisions/<YYYY-MM-DD> - <Short title>.md` (date = the meeting date) using the Decision template at `0. Templates/3. Decision template.md`:
+Turn substantive decisions made in the day's meetings into Decision notes. Read the `## Decisions` section of every meeting note dated the target day in `5. Meetings/`, plus any decisions logged in the daily note's `## Decisions / Signals` section. Keep only **substantive** decisions — choices with lasting effect (vendor/tooling/architecture/process/scope), not routine tasks, scheduling notes, or restatements of commitments. For each, glob `3. Decisions/` and skip any already covered by an existing note on the same subject (don't duplicate). Create the rest automatically (no approval needed) as `3. Decisions/<YYYY-MM-DD> - <Short title>.md` (date = the meeting date), reading `0. Templates/3. Decision template.md` and using it verbatim as the structure:
 - Set `status: decided` for a decision that was made; `status: pending` if it was tabled/still open. Add lowercase topic tags after `decisions`.
 - Fill **Decision** (what was decided), **Why** (rationale if stated), **Alternatives considered**, **Decision Owner** (`[[Name]]`), **Revisit Trigger**, and **AI Recall** — omit a section only when there's genuinely nothing for it; don't fabricate.
 - Add a `- Decided in [[<YYYY-MM-DD> - <Meeting Title>]]` line so the decision traces back to its source meeting.
@@ -118,7 +88,7 @@ Durable facts vault-groom distilled from daily notes, pending promotion into `7.
 Look for duplicate or near-duplicate notes about the same person/project/company/topic (including loose top-level files like `Hawk proxy issue.md` that belong inside a numbered folder). Merge them: keep the best-located canonical file, fold in unique content from the others, update all `[[links]]` that pointed to the removed notes, and delete the redundant files. Preserve all substantive information.
 
 ## Step 7 — Update MOCs (Maps of Content)
-The vault has no MOC index notes yet. Maintain one index note per relevant category at the folder root, named `<N>. <Category>/<Category> MOC.md` (e.g. `1. People/People MOC.md`), with `type: moc` frontmatter and a linked list of the notes in that category grouped sensibly. Create the MOC if missing; otherwise add links for any new notes from this run. Only touch MOCs for categories that gained or changed notes.
+Maintain one index note per relevant category at the folder root, named `<N>. <Category>/<Category> MOC.md` (e.g. `1. People/People MOC.md`), holding a linked list of that category's notes grouped sensibly. Create a missing MOC from `0. Templates/8. MOC template.md` — read it and use it verbatim as the structure, adding lowercase category tags after `moc`; otherwise just add links for any new notes from this run. Only touch MOCs for categories that gained or changed notes.
 
 ## Step 8 — Flag strategic items for review
 From the target-day content, surface anything strategic the user should review before today's work: open decisions, commitments/deadlines, blockers, risks, or high-signal items. These are for the chat report only — do not create task files for them.

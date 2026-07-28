@@ -54,33 +54,14 @@ Everything you write must be traceable to vault content. **Never fabricate, infe
 - If a candidate contradicts what the note already says, keep both and flag it inline — `> ⚠️ 2026-07-27 [[source]] says X; note said Y — reconcile` — never silently overwrite.
 - Add the candidate's `Source:` `[[wikilink]]` to the note's source list.
 
-**Creating a new note** — `7. Knowledge/<Subject>.md`, following `0. Templates/7. Knowledge template.md`:
-```
----
-type: knowledge
-area: <e.g. Engineering, Process, Product — omit if genuinely unclear>
-tags:
-  - knowledge
-  - <lowercase topic tags>
----
-# <Subject>
+**Creating a new note** — `7. Knowledge/<Subject>.md`. Read `0. Templates/7. Knowledge template.md` and use it verbatim as the note's structure — same frontmatter keys, same sections, same order. Fill it in as follows:
+- `area` — e.g. Engineering, Process, Product. Leave blank if genuinely unclear.
+- `tags` — keep `knowledge`, then add lowercase topic tags.
+- `# <heading>` — the subject.
+- **Summary** — 2–4 lines: what this subject is and why it matters, written for someone with no memory of the meetings.
+- **Details** — the accumulated facts, organized for lookup rather than narrative: sub-headings per aspect, tables for canonical values, blockquotes for verbatim rules. Leave the structure open enough that future promotions slot in without a rewrite.
+- **Source** — `[[wikilinks]]` to the vault notes each fact came from, then `Type:` (meeting | decision | source distillation), `Origin:` (person, document, or system the knowledge came from), and `Processed:` (`YYYY-MM-DD` — get today's date with a shell `date` command).
 
-## Summary
-
-<2–4 lines: what this subject is and why it matters. Written for someone with no memory of the meetings.>
-
-## Details
-
-<The accumulated facts, organized for lookup rather than narrative — sub-headings per aspect,
-tables for canonical values, blockquotes for verbatim rules. Leave the structure open enough
-that future promotions slot in without a rewrite.>
-
-## Source
-- <[[wikilinks]] to the vault notes each fact came from>
-- Type: <meeting | decision | source distillation>
-- Origin: <person, document, or system the knowledge came from>
-- Processed: <YYYY-MM-DD — get today's date with a shell `date` command>
-```
 Sources here are permanent vault notes, so `[[wikilinks]]` are correct — unlike `distill-source`, which cites transient files as plain text. Cross-link into the rest of the vault where natural: `[[Company]]`, `[[Person]]`, related `[[Knowledge note]]`.
 
 ## Step 7 — Update the inbox

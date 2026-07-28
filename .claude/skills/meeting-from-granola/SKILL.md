@@ -22,44 +22,19 @@ Call `mcp__claude_ai_Granola__get_meetings` with the extracted UUID as the singl
 - If Granola returns nothing for the ID, stop and tell the user the meeting couldn't be found (the ID may be wrong or the meeting not synced).
 
 ## Step 3 — Meeting note template
-Follow the vault's Meeting template exactly. Filename: `5. Meetings/<YYYY-MM-DD> - <Title>.md`, where the date is the meeting date and the title is the meeting's Granola title (strip characters illegal in filenames: `/ \ : * ? " < > |`).
+Read `0. Templates/5. Meeting template.md` and use it verbatim as the note's structure — same frontmatter keys, same sections, same order. Filename: `5. Meetings/<YYYY-MM-DD> - <Title>.md`, where the date is the meeting date and the title is the meeting's Granola title (strip characters illegal in filenames: `/ \ : * ? " < > |`).
 
-```
----
-type: meeting
-date: <YYYY-MM-DD>
-tags:
-  - meetings
-  - <topic tags, lowercase>
-attendees:
-  - "[[Name]]"
----
-## Summary
+Fill it in as follows:
+- `date` — the meeting date (`YYYY-MM-DD`).
+- `tags` — keep `meetings`, then add relevant lowercase topic tags (e.g. `garnishments`, `payments`).
+- `attendees` — a list of `"[[Name]]"` entries by first name (match how existing People notes are named — check `1. People/`). Use the person's name as it appears in the vault.
+- **Summary** — 1–3 paragraphs from Granola.
+- **Decisions** — decisions made, one per line.
+- **Commitments** — action items / follow-ups, ideally attributed with `[[Name]]`.
+- **Preferences captured** — stated preferences or working styles.
+- **Key Links** — always include `[Granola notes](<original URL>)`.
 
-<1–3 paragraph summary from Granola>
-
-## Decisions
-
-- <decisions made, one per line; "- " if none>
-
-## Commitments
-
-- <action items / follow-ups, ideally attributed with [[Name]]; "- " if none>
-
-## Preferences captured
-
-- <stated preferences or working styles; "- " if none>
-
-## Key Links
-
-- [Granola notes](<original URL>)
-```
-
-Conventions:
-- Attendees are `[[Wikilink]]` references by first name (match how existing People notes are named — check `1. People/`). Use the person's name as it appears in the vault.
-- Add relevant lowercase topic tags after `meetings` (e.g. `garnishments`, `payments`).
-- Always include the original Granola URL under Key Links.
-- Keep sections that have no content as a single `- ` placeholder, matching the template.
+Keep sections that have no content as the template's single `- ` placeholder.
 
 ## Step 4 — Write the note
 Write the file to `5. Meetings/<YYYY-MM-DD> - <Title>.md`. If a note with that exact filename already exists, do not overwrite — report that it exists and ask the user whether to overwrite or create a variant.
