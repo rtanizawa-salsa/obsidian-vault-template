@@ -23,7 +23,7 @@ A personal knowledge base optimized for both human and LLM use. Notes are small,
 | `4. Companies/` | `companies` | One note per external org/vendor | `<Company Name>.md` |
 | `5. Meetings/` | `meeting` | One note per meeting | `YYYY-MM-DD - <Title>.md` |
 | `6. Daily/` | `daily` | One note per day | `YYYY-MM-DD.md` |
-| `7. Knowledge/` | (untyped/reference) | Durable reference notes, policies, facts | `<Topic>.md` |
+| `7. Knowledge/` | `knowledge` | Durable reference notes, policies, facts. `Knowledge candidates.md` is the inbox of facts awaiting promotion, not a reference note itself | `<Topic>.md` |
 | `8. MOC/` | (map) | Top-level Maps of Content | `<Name> MOC.md` |
 | `9. Sources/` | (transient) | Raw source material staged for distillation into `7. Knowledge/`; deleted after processing | `<original filename>` |
 

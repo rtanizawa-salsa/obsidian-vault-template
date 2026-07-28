@@ -71,7 +71,7 @@ Start with these three system notes at the vault root:
 | `4. Companies/` | `companies` | One note per external org/vendor |
 | `5. Meetings/` | `meeting` | One note per meeting (`YYYY-MM-DD - <Title>.md`) |
 | `6. Daily/` | `daily` | One note per day (`YYYY-MM-DD.md`) |
-| `7. Knowledge/` | reference | Durable reference notes, policies, facts |
+| `7. Knowledge/` | reference | Durable reference notes, policies, facts — plus `Knowledge candidates.md`, the inbox vault-groom fills and promote-knowledge drains |
 | `8. MOC/` | map | Cross-cutting Maps of Content spanning folders |
 | `9. Sources/` | (transient) | Raw sources dropped in for distillation into `7. Knowledge/`, then deleted |
 
@@ -96,7 +96,7 @@ This template pairs with the community plugins below. Plugin config is not shipp
 
 ## Automating with Claude Code (skills)
 
-This vault pairs well with [Claude Code](https://claude.com/claude-code) for maintenance. It ships with four example skills under `.claude/skills/` — invoke them by slash command in a Claude Code session pointed at this folder, or adapt them / add your own:
+This vault pairs well with [Claude Code](https://claude.com/claude-code) for maintenance. It ships with five example skills under `.claude/skills/` — invoke them by slash command in a Claude Code session pointed at this folder, or adapt them / add your own:
 
 | Skill | Invoke | What it does |
 | --- | --- | --- |
@@ -104,8 +104,9 @@ This vault pairs well with [Claude Code](https://claude.com/claude-code) for mai
 | **vault-groom** | `/vault-groom [today \| yesterday \| YYYY-MM-DD]` | Grooms a day's notes: creates orphan notes for newly referenced people/projects/companies, consolidates duplicates, updates the MOCs, and flags strategic items. |
 | **meeting-from-granola** | `/meeting-from-granola <url>` | Turns a [Granola](https://granola.ai) meeting URL into a note in `5. Meetings/` using the Meeting template, then updates the Meetings MOC. *Requires the Granola connector* — swap in your own meeting source if you don't use it. |
 | **distill-source** | `/distill-source [file \| URL \| all]` | Distills a raw source dropped in `9. Sources/` (PDF, article, transcript, markdown) or a URL into clean single-subject `7. Knowledge/` notes — merging into existing notes on the same topic, preserving provenance, and updating the Knowledge MOC. Leaves the source for you to clean up. |
+| **promote-knowledge** | `/promote-knowledge [all \| YYYY-MM-DD \| topic]` | Promotes candidates out of `7. Knowledge/Knowledge candidates.md` into durable Knowledge notes — grouping candidates by subject and either enriching the existing note on that topic or creating a new one at the right altitude (a subject page that accumulates facts, never a page per implementation detail). Clears promoted lines from the inbox and updates the Knowledge MOC. Defaults to **all** candidates. |
 
-A natural daily rhythm chains them: at end of day run **daily-summary** to capture what happened, then **vault-groom** to create the orphan notes it flagged and commit the day's changes (daily-summary intentionally does not commit — that's vault-groom's job).
+A natural daily rhythm chains them: at end of day run **daily-summary** to capture what happened, then **vault-groom** to create the orphan notes it flagged and commit the day's changes (daily-summary intentionally does not commit — that's vault-groom's job). **vault-groom** only ever *proposes* Knowledge facts into the candidates inbox — run **promote-knowledge** when you want those candidates turned into real Knowledge notes.
 
 ### Scheduling a skill (Claude Code desktop)
 
