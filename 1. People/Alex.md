@@ -10,13 +10,25 @@ tags:
   - people
   - platform
 ---
+## Roles
+
+- Responsible for A
+- Responsible for B
+
+## Open loops
+
+- [ ] Item 1
+- [ ] Item 2
+
 ## Linked Projects
 
 - [[2026-01-08 - Search v2]]
+- Project 2
 
 ## Active Links
 
-- [[2026-01-22 - Weekly team sync]]
+- Link 1
+- Link 2
 
 ## AI Recall Notes
 
