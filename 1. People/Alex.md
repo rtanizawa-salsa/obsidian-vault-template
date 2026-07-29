@@ -4,6 +4,8 @@ status: active
 role:
   - Software Engineer
 team: Aurora
+email: alex@example.com
+phone:
 tags:
   - people
   - platform

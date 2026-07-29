@@ -43,8 +43,14 @@ Every note you create comes from a template file in `0. Templates/`. **Read the 
 
 Add lowercase topic tags after the template's own `type` tag (e.g. `people` → `people`, `platform`).
 
-## Step 3 — Create orphan notes
+## Step 3 — Create orphan notes & sync people's open loops
 Scan the target-day notes for mentions of people, projects, or companies that are referenced (as `[[X]]` links OR named in prose) but do NOT yet have their own file in the matching folder. For each genuine new entity, read the template from the table above and create the file from it, pre-filling anything you can confidently infer from the context (role, team, company, why it matters) and leaving the rest as the template's own placeholders. Add a `[[wikilink]]` back-reference where natural. Do not create notes for trivial or ambiguous mentions.
+
+**Then sync each involved person's open loops.** The daily note's `## Open loops` section attributes loops to people (e.g. `- [ ] … [[Jordan]] is handling this`). For every person named as the owner of — or a participant in — a target-day open loop, reflect that loop in their person note's `## Open loops` section (the heading defined by `0. Templates/1. Person template.md`):
+- **Add** a loop that isn't already there, phrased from their perspective and keeping any `[[wikilinks]]`.
+- **Check off** (`- [x]`) any of their existing loops the daily note shows resolved that day.
+- **Never duplicate** a loop already listed, and don't invent loops for trivial mentions.
+- This applies both to people who already have a note and to any you just created in this step. Match the `## Open loops` heading casing exactly.
 
 ## Step 4 — Capture decisions from the day's meetings
 Turn substantive decisions made in the day's meetings into Decision notes. Read the `## Decisions` section of every meeting note dated the target day in `5. Meetings/`, plus any decisions logged in the daily note's `## Decisions / Signals` section. Keep only **substantive** decisions — choices with lasting effect (vendor/tooling/architecture/process/scope), not routine tasks, scheduling notes, or restatements of commitments. For each, glob `3. Decisions/` and skip any already covered by an existing note on the same subject (don't duplicate). Create the rest automatically (no approval needed) as `3. Decisions/<YYYY-MM-DD> - <Short title>.md` (date = the meeting date), reading `0. Templates/3. Decision template.md` and using it verbatim as the structure:
@@ -62,11 +68,11 @@ Scan the target-day notes (meetings, the day's Decision notes, and the daily not
 Strong signals a fact is knowledge: it's phrased as a general rule/policy/spec, it's a concrete durable number or identifier, or the same fact is referenced across multiple notes.
 
 Then:
-1. Glob and read `7. Knowledge/` (the existing reference notes) and the candidates inbox `7. Knowledge/Knowledge candidates.md`. **Dedupe:** skip any fact already covered by an existing Knowledge note or already listed in the inbox.
+1. Glob and read `7. Knowledge/` (the existing reference notes) and the candidates inbox — locate it by Glob (`7. Knowledge/*Knowledge candidates*.md`) rather than a hard-coded path, since the filename may carry a sort prefix. **Dedupe:** skip any fact already covered by an existing Knowledge note or already listed in the inbox.
 2. Classify each genuine new candidate:
    - **New note** — no existing Knowledge note covers the topic → propose a note title and `area`.
    - **Update** — an existing Knowledge note covers the topic but is missing this fact (e.g. a new step or edge case for `Release process`) → name the target note and what to add.
-3. Append each to `7. Knowledge/Knowledge candidates.md` (create it if missing, using the frontmatter below) as an unchecked checkbox item with: the fact in 1–2 lines, the proposed target (**New note:** `<title>` / **Update:** `[[Existing note]]`), a `Source:` `[[wikilink]]` back to the note it came from, and a confidence (high/medium/low).
+3. Append each to that inbox file (if the Glob found nothing, create `7. Knowledge/Knowledge candidates.md` using the frontmatter below) as an unchecked checkbox item with: the fact in 1–2 lines, the proposed target (**New note:** `<title>` / **Update:** `[[Existing note]]`), a `Source:` `[[wikilink]]` back to the note it came from, and a confidence (high/medium/low).
 4. Also list these candidates in the chat report (Output section) so the user can promote them immediately.
 
 Only surface high-signal, durable facts — a handful at most per day, not every stray statement. If nothing qualifies, do nothing and report "none". Never fabricate a fact to fill the inbox.

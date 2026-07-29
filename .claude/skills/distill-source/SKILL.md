@@ -36,7 +36,7 @@ Before writing anything, Glob and Read `7. Knowledge/` so you know what already 
 - **Existing note covers it** → **enrich that note**, don't duplicate. Integrate the new facts into the right section (add a row, an FAQ, an edge case, a `## <New aspect>` section). **Preserve all existing hand-written content** — you are adding to a curated note, not rewriting it. If the source contradicts an existing fact, keep both and flag the conflict inline (e.g. `> ⚠️ Source X says 3 days; existing note said 5 — reconcile`) rather than silently overwriting.
 - **No existing note** → create a new one (Step 5).
 
-Also check the candidates inbox `7. Knowledge/Knowledge candidates.md`: if a fact you're now writing as a real note was sitting there as a candidate, remove that candidate line — it's been promoted.
+Also check the candidates inbox — locate it by Glob (`7. Knowledge/*Knowledge candidates*.md`) rather than a hard-coded path, since the filename may carry a sort prefix: if a fact you're now writing as a real note was sitting there as a candidate, remove that candidate line — it's been promoted.
 
 ## Step 5 — Write the Knowledge notes
 Read `0. Templates/7. Knowledge template.md` and use it verbatim as each new note's structure — same frontmatter keys, same sections, same order. Create each note as `7. Knowledge/<Topic>.md` and fill it in as follows:

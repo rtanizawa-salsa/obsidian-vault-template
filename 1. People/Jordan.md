@@ -5,6 +5,8 @@ role:
   - Software Engineer
   - Team Lead
 team: Aurora
+email: jordan@example.com
+phone:
 tags:
   - people
   - platform

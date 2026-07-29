@@ -4,6 +4,8 @@ status: active
 role:
   - Product Manager
 team: Borealis
+email: priya@example.com
+phone:
 tags:
   - people
   - growth

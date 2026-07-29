@@ -4,6 +4,8 @@ status: active
 role:
   - Software Engineer
 team: Borealis
+email: sam@example.com
+phone:
 tags:
   - people
   - growth
