@@ -46,11 +46,19 @@ Add lowercase topic tags after the template's own `type` tag (e.g. `people` → 
 ## Step 3 — Create orphan notes & sync people's open loops
 Scan the target-day notes for mentions of people, projects, or companies that are referenced (as `[[X]]` links OR named in prose) but do NOT yet have their own file in the matching folder. For each genuine new entity, read the template from the table above and create the file from it, pre-filling anything you can confidently infer from the context (role, team, company, why it matters) and leaving the rest as the template's own placeholders. Add a `[[wikilink]]` back-reference where natural. Do not create notes for trivial or ambiguous mentions.
 
-**Then sync each involved person's open loops.** The daily note's `## Open loops` section attributes loops to people (e.g. `- [ ] … [[Jordan]] is handling this`). For every person named as the owner of — or a participant in — a target-day open loop, reflect that loop in their person note's `## Open loops` section (the heading defined by `0. Templates/1. Person template.md`):
+**Then sync open loops — but only the ones the vault owner has a stake in.** This vault is a single person's working memory (see the vault-root `CLAUDE.md`, which names the owner). A person note's `## Open loops` section is **not** a generic task tracker for that person — it exists so the owner can see the loops *they* care about, attached to whoever owns them. So reflect a loop on a person's note **only when the vault owner has a genuine touchpoint or dependency on it**:
+- It's tied to a project the owner works on, **or**
+- The owner is waiting on it, blocked by it, or feeding into it (a real dependency between that loop and their work).
+
+**Do not** sync a loop that is purely someone else's work with no dependency for the owner — e.g. company-wide or other-team commitments surfaced in an all-hands that don't touch the owner's projects. Those stay in the source meeting note's `## Commitments`; they do **not** get copied onto the person note. When in doubt about whether the owner depends on a loop, leave it off — the meeting note still records it.
+
+The daily note's `## Open loops` section attributes loops to people (e.g. `- [ ] … [[Jordan]] is handling this`); those are already owner-centric, so they're the primary source. For each qualifying loop, in the owner's/participant's `## Open loops` section (heading from `0. Templates/1. Person template.md`):
 - **Add** a loop that isn't already there, phrased from their perspective and keeping any `[[wikilinks]]`.
 - **Check off** (`- [x]`) any of their existing loops the daily note shows resolved that day.
 - **Never duplicate** a loop already listed, and don't invent loops for trivial mentions.
 - This applies both to people who already have a note and to any you just created in this step. Match the `## Open loops` heading casing exactly.
+
+Creating a person note for a genuinely-referenced person is still fine even when they have no owner-relevant loop — they're useful reference context — but in that case leave their `## Open loops` empty rather than manufacturing one.
 
 ## Step 4 — Capture decisions from the day's meetings
 Turn substantive decisions made in the day's meetings into Decision notes. Read the `## Decisions` section of every meeting note dated the target day in `5. Meetings/`, plus any decisions logged in the daily note's `## Decisions / Signals` section. Keep only **substantive** decisions — choices with lasting effect (vendor/tooling/architecture/process/scope), not routine tasks, scheduling notes, or restatements of commitments. For each, glob `3. Decisions/` and skip any already covered by an existing note on the same subject (don't duplicate). Create the rest automatically (no approval needed) as `3. Decisions/<YYYY-MM-DD> - <Short title>.md` (date = the meeting date), reading `0. Templates/3. Decision template.md` and using it verbatim as the structure:

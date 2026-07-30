@@ -65,7 +65,7 @@ Lead with the Linear activity the user confirmed in Step 3 — treat those as al
 
 1. **Tickets & tasks done** — "What tickets or tasks did you work on or finish today?" For each, capture: the work, whether it's done or in progress, the project it rolls up to, and any ticket/PR link. Map these to the project-grouped Main objectives / Side objectives structure.
 2. **Blocking issues** — "Any blockers or issues that came up today — things that stopped or slowed you?" For each, capture what it is, who owns unblocking it (`[[Name]]`), and whether it's now resolved or still blocking.
-3. **Open loops remaining** — "What's still open — loops you need to pick back up?" Capture each as a to-do, attributing an owner with `[[Name]]` where relevant. Also confirm the status of any carry-over open loops you saw in Step 2 (resolved → check off; still open → keep).
+3. **Open loops remaining** — "What's still open — loops you need to pick back up?" Capture each as a to-do, attributing an owner with `[[Name]]` where relevant. Also confirm the status of any carry-over open loops you saw in Step 2 (resolved → check off; still open → keep). Record only loops the vault owner owns or **depends on** — this daily note is their working memory, not a tracker for other people's or other teams' tasks. A commitment someone else made in a meeting that the owner has no touchpoint or dependency on stays in that meeting note's `## Commitments`; it does not become an open loop here.
 
 ## Step 6 — Write the note
 Write/Edit `6. Daily/<target-date>.md` using `0. Templates/6. Daily notes template.md` verbatim as the structure — same frontmatter keys, same sections, same order. Preserve all existing real content; merge new answers in.
